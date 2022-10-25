@@ -9,14 +9,14 @@ const Feed = () => {
     const [blocks, setBlocks] = useState([]);
 
     const addBlock = (newBlock) => {
-        setBlocks([...blocks, newBlock]);
+        setBlocks([newBlock, ...blocks]);
     };
     /* Use the map() function to render multiple Blocks! */
     const posts = blocks.map((block) => <Block color={block} />); // TODO: edit this variable
 
     return (
         <div>
-            <Menu></Menu>
+            <Menu function={addBlock}></Menu>
 
             {/* Below is where all of your Blocks should render! */}
             {posts}

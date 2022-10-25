@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
-import Feed from './Feed'
-import Block from './Block'
+import React from 'react';
+import Feed from './Feed';
 /* TODO: Translate the below class component to a functional component! */
 /*class Color extends React.Component {
 
@@ -15,7 +14,7 @@ import Block from './Block'
 
 const Color = (props) => {
     return (
-        <button onClick={() => Feed.addBlock(props.color)}>Post {props.color}</button>
+        <button onClick={() => props.handleClick(props.color)}>Post {props.color}</button>
     );
 }
 
