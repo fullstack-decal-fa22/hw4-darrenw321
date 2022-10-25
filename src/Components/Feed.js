@@ -12,7 +12,7 @@ const Feed = () => {
         setBlocks([newBlock, ...blocks]);
     };
     /* Use the map() function to render multiple Blocks! */
-    const posts = blocks.map((block) => <Block color={block} />); // TODO: edit this variable
+    const posts = blocks.map((block) => <Block color={block} caption={block}/>); // TODO: edit this variable
 
     return (
         <div>
