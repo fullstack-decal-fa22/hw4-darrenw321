@@ -6,6 +6,9 @@ const Menu = () => {
     return (
       <div className="colorOptions">
           {/* TODO */}
+          <Color color="red"/>
+          <Color color="orange"/>
+          <Color color="yellow"/>
       </div>
     );
 }
